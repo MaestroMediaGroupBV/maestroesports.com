@@ -1,0 +1,153 @@
+.Card {
+    width:564px;
+    height: 264px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0, 0.25);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Card:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 0 30px 60px rgba(0,0,0, 0.5); 
+}
+
+.Card:hover img {
+    transform: translateY(-20px);
+}
+.Card img {
+    position: absolute;
+    top: 0;
+    height: 150%;
+    z-index: -1;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Card h3 {
+    color: white;
+    font-size: 30px;
+    line-height: 1.5;
+    margin: 20px 0 0 20px;
+    width: 500px;
+}
+
+.Card p {
+    color: rgba(255, 255,255, 0.8);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    align-self: end;
+    margin: 0 0 20px 20px;
+}
+
+.Cardjob {
+    width:780px;
+    height: 100px;
+    border-radius: 6px 6px 0px 0px;
+    border: 1px solid #e6e9f2;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Cardjob h3 {
+    margin-top: -20px;
+    margin-left: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #3c424f; 
+}
+
+.Cardjob P {
+    margin-left: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #686b77;
+    visibility:hidden;
+    
+}
+
+.Cardjob:hover p {
+    visibility:visible;
+}
+
+@media (max-width: 720px) {
+    .Card {
+        width:300px;
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0 20px 40px rgba(0,0,0, 0.25);
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    
+    .Card:hover {
+        transform: scale(1.1, 1.1);
+        box-shadow: 0 30px 60px rgba(0,0,0, 0.5); 
+    }
+    
+    .Card:hover img {
+        transform: translateY(-20px);
+    }
+    .Card img {
+        position: absolute;
+        top: 0;
+        height: 110%;
+        z-index: -1;
+        transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    
+    .Card h3 {
+        color: white;
+        font-size: 20px;
+        line-height: 1.5;
+        margin: 20px 0 0 20px;
+        width: 270px;
+    }
+    
+    .Card p {
+        color: rgba(255, 255,255, 0.8);
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 14px;
+        align-self: end;
+        margin: 0 0 20px 20px;
+    }
+
+    .Cardjob {
+        width:310px;
+        height: 80px;
+        border-radius: 6px 6px 0px 0px;
+        border: 1px solid #e6e9f2;
+        transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .Cardjob h3 {
+        margin-top: -30px;
+        margin-left: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #3c424f; 
+    }
+    
+    .Cardjob P {
+        margin-left: 20px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #686b77;
+        visibility:hidden;
+        
+    }
+    
+    .Cardjob:hover p {
+        visibility:hidden;
+    }
+}
