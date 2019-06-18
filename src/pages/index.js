@@ -8,7 +8,7 @@ import SEO from '../components/seo'
 
 import Footer from '../components/Footer'
 import Wave from '../components/Wave'
-import Card from '../components/card'
+import Card from '../components/Card'
 
 const Button = styled.button`
     background: linear-gradient(102.24deg, #ff436d 0%, #2258ff 100%);
